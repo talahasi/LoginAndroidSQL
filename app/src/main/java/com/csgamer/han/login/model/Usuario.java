@@ -1,4 +1,4 @@
-package com.blue.giovani.login.model;
+package com.csgamer.han.login;
 
 public class Usuario {
     private long id;

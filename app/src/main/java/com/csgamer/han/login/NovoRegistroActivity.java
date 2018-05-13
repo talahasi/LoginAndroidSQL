@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import com.csgamer.han.login.dao.DaoAdapter;
 import com.csgamer.han.login.dao.UsuarioDao;
-import com.blue.giovani.login.model.Usuario;
+import com.csgamer.han.login.Usuario;
 
 public class NovoRegistroActivity extends AppCompatActivity {
 
@@ -66,8 +66,8 @@ public class NovoRegistroActivity extends AppCompatActivity {
     }
 
     private boolean validaCampos(){
-        if(usuario.getText().toString().length() < 5){
-            usuario.setError("Usuario deve conter no minimo 5 caracteres");
+        if(usuario.getText().toString().length() < 3){
+            usuario.setError("Usuario deve conter no minimo 3 caracteres");
             return false;
         }
         if(senha.getText().toString().length() < 8){
@@ -75,13 +75,13 @@ public class NovoRegistroActivity extends AppCompatActivity {
             return false;
         }
         if(!senha.getText().toString().equals(confirma.getText().toString())){
-            senha.setError("Os campos de senha devem ser iguais");
+            senha.setError("As senhas não conferem");
             return false;
         }
 
         Usuario userDb = usuarioDao.getByUsername(usuarioModel);
         if(userDb.getId() != 0){
-            usuario.setError("Usuario já existe no banco");
+            usuario.setError("Usuario já existe");
             return false;
         }
 

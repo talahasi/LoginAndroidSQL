@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.blue.giovani.login.MainActivity">
+        tools:context="com.csgamer.han.login.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,6 +37,14 @@
             android:hint="Usuario"
             android:inputType="textPersonName" />
 
+// METODO PARA DEIXAR O OLHO QUE VISUALIZA A SENHA
+<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary">
+
+
         <EditText
             android:id="@+id/txtSenha"
             android:layout_width="match_parent"
@@ -45,7 +53,7 @@
             android:ems="10"
             android:hint="Senha"
             android:inputType="textPassword" />
-
+</android.support.design.widget.TextInputLayout>
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"

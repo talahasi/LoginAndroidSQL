@@ -1,7 +1,7 @@
 package com.csgamer.han.login.dao;
 
 import android.content.Context;
-import com.blue.giovani.login.model.Animal;
+import com.csgamer.han.login.model.Animal;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import com.csgamer.han.login.dao.DaoAdapter;
 import com.csgamer.han.login.dao.UsuarioDao;
-import com.blue.giovani.login.model.Usuario;
+import com.csgamer.han.login.Usuario;
 
 public class MainActivity extends AppCompatActivity {
 

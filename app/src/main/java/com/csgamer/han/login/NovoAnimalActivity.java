@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.csgamer.han.login.dao.AnimalDao;
-import com.blue.giovani.login.model.Animal;
+import com.csgamer.han.login.model.Animal;
 
 public class NovoAnimalActivity extends AppCompatActivity {
     private EditText nome;
